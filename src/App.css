@@ -1,0 +1,22 @@
+.App {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.App div {
+  width: 33%;
+}
+
+
+
+.red {
+  color: #e3384d;
+}
+.yellow {
+  color: #fed600;
+}
+.blue {
+  color: #00BED6;
+}
+
