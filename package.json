@@ -1,0 +1,15 @@
+{
+  "name": "circuit_messing_around",
+  "version": "1.0.0",
+  "description": "Job opening task",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx test"
+  },
+  "keywords": [
+    "react",
+    "frontend"
+  ],
+  "author": "Josip Mikić",
+  "license": "ISC"
+}
