@@ -1,14 +1,34 @@
+
+/* responsive design */
+
 .App {
   display: flex;
   width: 80%;
   margin: auto;
 }
 
-.App div {
-  width: 33%;
+
+img {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  max-width:100%;
+  max-height:100%;
+  width: 100%;
+}
+.flex{
+  display: flex;
 }
 
+.card{
+  border: 1px solid black;
+  margin: 0 1rem;
+}
+.content-container{
+  padding: 25px;
+  background-color: white;
+}
 
+/* colors  */
 
 .red {
   color: #e3384d;
@@ -17,6 +37,13 @@
   color: #fed600;
 }
 .blue {
-  color: #00BED6;
+  color: #00bed6;
 }
 
+.bg-white{
+  background-color: white;
+}
+
+.bg-red{
+  background-color: #e3384d;
+}
