@@ -7,8 +7,9 @@ h1 {
   font-weight: bold;
 }
 .App {
-  width: 80%;
+  width: 60%;
   margin: auto;
+  min-width: 1000px;
 }
 
 .App > p {
@@ -26,8 +27,9 @@ img {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 250px;
   width: 100%;
+  object-fit: contain;
 }
 .flex {
   display: flex;
@@ -39,6 +41,12 @@ img {
   border-radius: 1rem;
   box-shadow: 0px 0px 14px -3px;
   width: 32%;
+  scale: 98%;
+  transition: scale 0.3s ease-in-out;
+}
+.card:hover{
+  transition: scale 0.3s ease-in-out;
+scale: 100%;
 }
 .card p {
   font-weight: 600;
@@ -75,13 +83,21 @@ img {
 
 button {
   border-radius: 50px;
-  background-color: red;
+  background-color: #e3384d;
   color: white;
   border-color: transparent;
   font-weight: 500;
   width: 40%;
   font-size: 16px;
   height: 3rem;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+button:hover{
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .loadButton {
@@ -166,12 +182,20 @@ button {
   .card {
     width: 48%;
   }
+  .App{
+    width: 100%;
+    min-width: unset;
+  }
 }
 
 /* SMALL LAPTOP */
 @media (max-width: 1000px) {
   .card {
     width: 48%;
+  }
+  .App{
+    width: 100%;
+    min-width: unset;
   }
 }
 
@@ -180,6 +204,7 @@ button {
 @media (max-width: 500px) {
   .App {
     width: 90%;
+    min-width: unset;
   }
   .card-container {
     flex-direction: column;
@@ -191,21 +216,3 @@ button {
 }
 
 /* colors  */
-
-.red {
-  color: #e3384d;
-}
-.yellow {
-  color: #fed600;
-}
-.blue {
-  color: #00bed6;
-}
-
-.bg-white {
-  background-color: white;
-}
-
-.bg-red {
-  background-color: #e3384d;
-}
