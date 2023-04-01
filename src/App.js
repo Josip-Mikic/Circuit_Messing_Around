@@ -15,14 +15,8 @@ function App() {
       setIsLoading(false)
     }, 2000);
   };
-
-  // useEffect(() => {
-
-  // }, []);
-
   return (
     <div className="App">
-      {isLoading ? (<p>loading</p>) :(<p>not loading</p>) }
       <p className="title">
         Learn electonics & coding <br /> with our best-selling DIY STEM kits:
       </p>

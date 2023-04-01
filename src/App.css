@@ -102,7 +102,7 @@ button {
   width: fit-content;
   align-items: flex-end;
 }
-/* loading spinner */
+/* LOADING SPINNER */
 .spinner {
   position: relative;
   display: inline-block;
