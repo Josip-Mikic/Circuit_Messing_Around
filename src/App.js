@@ -68,7 +68,11 @@ function App() {
         {mockData.map((item) => (
           <Card data={item}></Card>
         ))}
-        <button onClick={handleAddData}>Load More</button>
+      
+      </div>
+      <div>
+      <button className="loadButton" onClick={handleAddData}>Load More</button>
+
       </div>
     </div>
   );
