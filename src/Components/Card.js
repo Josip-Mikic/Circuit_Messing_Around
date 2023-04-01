@@ -22,7 +22,7 @@ export default function Card(props) {
 
         <div className="bottom-container">
           <button>Shop now</button>
-          <img className="age" src="age-9.svg" alt="image containing a product that we sell" />
+          <img className="age" src="age-9.svg" alt="containing a product that we sell" />
         </div>
       </div>
     </div>
