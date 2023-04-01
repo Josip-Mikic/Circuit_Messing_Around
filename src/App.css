@@ -5,6 +5,7 @@
 
 h1 {
   font-weight: bold;
+  margin-bottom: 0;
 }
 .App {
   width: 60%;
@@ -44,9 +45,9 @@ img {
   scale: 98%;
   transition: scale 0.3s ease-in-out;
 }
-.card:hover{
+.card:hover {
   transition: scale 0.3s ease-in-out;
-scale: 100%;
+  scale: 100%;
 }
 .card p {
   font-weight: 600;
@@ -58,6 +59,27 @@ scale: 100%;
 }
 
 /* discounted price */
+
+.price {
+  /*  */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.price p {
+  margin-top: 0;
+  font-weight: 500;
+}
+.price span {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .card span {
   font-size: 22px;
   font-weight: 500;
@@ -70,6 +92,11 @@ scale: 100%;
   margin-right: 5%;
   word-break: break-all;
   white-space: normal;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .content-container {
   display: flex;
@@ -94,7 +121,7 @@ button {
   box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.15);
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -102,7 +129,7 @@ button:hover{
 
 .loadButton {
   display: block;
-  margin: 1rem auto ;
+  margin: 1rem auto;
 }
 .age {
   width: fit-content;
@@ -111,12 +138,13 @@ button:hover{
 .bottom-container {
   display: flex;
   justify-content: space-between;
-  flex: 1;
+
   align-items: flex-end;
 }
 .bottom-container button {
   width: fit-content;
   align-items: flex-end;
+  padding: 0 5%;
 }
 /* LOADING SPINNER */
 .spinner {
@@ -182,7 +210,7 @@ button:hover{
   .card {
     width: 48%;
   }
-  .App{
+  .App {
     width: 100%;
     min-width: unset;
   }
@@ -193,7 +221,7 @@ button:hover{
   .card {
     width: 48%;
   }
-  .App{
+  .App {
     width: 100%;
     min-width: unset;
   }
