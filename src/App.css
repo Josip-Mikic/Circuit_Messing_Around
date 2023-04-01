@@ -1,32 +1,142 @@
-
 /* responsive design */
+* {
+  font-family: "Poppins";
+}
 
+h1 {
+  font-weight: bold;
+}
 .App {
-  display: flex;
   width: 80%;
   margin: auto;
 }
 
+.App > p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 18px;
+  text-align: center;
+}
 
 img {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-  max-width:100%;
-  max-height:100%;
+  max-width: 100%;
+  max-height: 100%;
   width: 100%;
 }
-.flex{
+.flex {
   display: flex;
 }
 
-.card{
-  border: 1px solid black;
-  margin: 0 1rem;
+.card {
+  border-radius: 1rem;
+  box-shadow: 0px 0px 14px -3px;
+  width:32%;
 }
-.content-container{
+.card p {
+  font-weight: 600;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* discounted price */
+.card span {
+  font-size: 22px;
+  font-weight: 500;
+  white-space: break-spaces;
+}
+/* current price */
+.card span s {
+  font-size: 26px;
+  font-weight: 500;
+  margin-right: 5%;
+  word-break: break-all;
+  white-space: normal;
+}
+.content-container {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   padding: 25px;
   background-color: white;
 }
+
+button {
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  border-color: transparent;
+  font-weight: 500;
+  width: 40%;
+  font-size: 16px;
+  height: 3rem;
+  margin: 0 auto 1rem;
+}
+.age {
+  width: fit-content;
+  height:3rem;
+}
+.testing {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: flex-end;
+}
+
+/* TABLET */
+@media (max-width: 600px) {
+  .App {
+    width: 80%;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    margin: 5% 0;
+  }
+}
+
+@media (max-width: 801px) {
+  .card-container {
+    flex-direction: row;
+  }
+  .card{
+    width: 48%;
+  }
+  
+}
+
+/* SMALL LAPTOP */
+@media (max-width: 1000px) {
+.card{
+  width: 48%;
+}
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+  .App {
+    width: 90%;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    margin: 5% 0;
+  }
+}
+
+
 
 /* colors  */
 
@@ -40,10 +150,10 @@ img {
   color: #00bed6;
 }
 
-.bg-white{
+.bg-white {
   background-color: white;
 }
 
-.bg-red{
+.bg-red {
   background-color: #e3384d;
 }

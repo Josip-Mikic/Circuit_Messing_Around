@@ -3,20 +3,19 @@ import React from "react";
 export default function Card(props) {
   return (
     <div className="card">
-      <img className="bg-red" src={props.image} alt="DIY voice assistant" />
+      <img className="bg-red" src={props.data.image} alt="DIY voice assistant" />
       <div className="content-container">
-        <h1 className="red">Spencer</h1>{" "}
+        <h1 className="red">{props.data.name}</h1>{" "}
         <p>
-          A DIY voice assistant that talks, lights up, and understands voice
-          commands
+         {props.data.headingText}
         </p>
         <span className="red">
-          <s>kn1,027.99</s>kn813.99
+          <s>kn{props.data.price}</s>kn{(props.data.price*props.data.discount).toFixed(2)}
         </span>
-        <p className="red">Limited 20% discount</p>
-        <div>
+        <p className="red">Limited {props.data.discount*100}% discount</p>
+        <div className="testing">
           <button>Shop now</button>
-          <p>AGES 11+</p>
+          <img className="age" src="age-9.svg" alt="" />
         </div>
       </div>
     </div>
