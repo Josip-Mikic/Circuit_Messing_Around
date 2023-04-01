@@ -1,5 +1,6 @@
 export const exampleData = [
     {
+
       image: "/Spencer.webp",
       age: 9,
       headingText:
@@ -7,6 +8,7 @@ export const exampleData = [
       name: "Spencer",
       price: 1027.99,
       discount: 0.2,
+
       accent:"#e3384d"
     },
     {
@@ -16,15 +18,18 @@ export const exampleData = [
       name: "Jay-D",
       price: 1027.99,
       discount: 0.15,
+
       accent:"#fed600"
     },
     {
       image: "/Nibble.webp",
       age: 9,
+
       headingText: "Build & code your very own retro game console",
       name: "Nibble",
       price: 813.99,
       discount: 0.2,
+
       accent:"#00bed6"
     },
   ];
